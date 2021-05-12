@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MyPilas</title>
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/base.css"> 
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/componentes.css">
+</head>
+<body>
+  <header class="layout-cabecalho">
+    <div class="container">
+      <nav class="navegacao navegacao--assinatura">
+        <a href="index.html"><img src="imagens/logo.png" width="100px" height="35px" alt="MyPilas"></a>
+      </nav>
+
+    </div>
+  </header>
+  
+  <main class="layout-assinatura">
+    <div class="container">
+
+      <form action="#" method="get">
+        <h1 class="titulo-formulario">Sua assinatura do MyPilas</h1>
+
+        <div class="grupo-entrada">
+        <label for="razao-social">Razão social</label>
+        <input id="razao-social" name="razao-social" type="text" class="campo" required>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-3"> 
+            <div class="grupo-entrada">
+              <label for="cnpj">CNPJ</label>
+              <input id="cnpj" name="cnpj" type="text" class="campo" required>
+            </div>
+          </div>
+          <div class="col-sm-3"> 
+            <div class="grupo-entrada">
+              <label for="data-nascimento">Data de fundação</label>
+              <input id="data-nascimento" name="data-nascimento" type="date" class="campo" required>
+            </div>
+          </div>
+        </div>
+
+        <div class="grupo-entrada">
+          <label for="responsavel">Responsável</label>
+          <input id="responsavel" name="responsavel" type="text" class="campo" required>
+        </div>
+
+        <div class="grupo-entrada">
+          <label for="email">E-mail</label>
+          <input id="email" name="email" type="email" class="campo" required>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-3">
+            <div class="grupo-entrada">
+              <label for="estado">Estado</label>
+              <select id="estado" name="estado" class="campo" required>
+                <option>Selecione</option>
+                <option value="SP">São Paulo</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="MT">Mato Grosso</option>
+                <option value="MS">Mato Grosso do Sul</option>
+                <option value="PE">Pernambuco</option>
+                <option value="BA">Bahia</option>
+                <option value="MG">Minas Gerais</option>
+                <option value="RS">Rio Grande do Sul</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="grupo-entrada">
+              <label for="cidade">Cidade</label>
+              <select id="cidade" name="cidade" class="campo" required>
+                <option>Selecione</option>
+                <option value="1">Jandira</option>
+                <option value="2">Itapevi</option>
+                <option value="3">Bonito</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-3">
+            <div class="grupo-entrada">
+              <label for="senha">Senha</label>
+              <input id="senha" type="password" class="campo" required>
+            </div>
+          </div> 
+          <div class="col-sm-3">
+            <div class="grupo-entrada">
+              <label for="confirmacao-senha">Confirme a senha</label>
+              <input id="confirmacao-senha" type="password" class="campo" required>
+            </div>
+          </div>
+        </div>
+
+        <div style=" text-align: center; margin-top: 40px ">
+          <input type="submit" value="Assinar MyPilas" class="botao botao--principal">
+        </div>
+
+      </form>
+
+    </div>
+  </main>
+
+  <footer class="layout-rodape">
+    <div class="container">
+      <p>&copy; MyPilas. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
